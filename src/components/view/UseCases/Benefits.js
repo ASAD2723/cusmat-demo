@@ -9,7 +9,6 @@ import Slider from "react-slick";
 
 const Benefits = () => {
   const settings = {
-    // dots: true,
     infinite: true,
     slidesToShow: 4,
     slidesToScroll: 1,
@@ -29,17 +28,18 @@ const Benefits = () => {
     },
     { icon: Error, title: "Reduced Errors and Accidents" },
   ];
+
   const cardItems = cards.map((card, i) => (
-    <div className="icon-box">
+    <div key={i} className="icon-box">
       <div className="card-icon">
-        <img key={i} src={card.icon} alt="" className="" />
+        <img src={card.icon} alt="" className="" />
       </div>
-      <p key={i}>{card.title}</p>
+      <p>{card.title}</p>
     </div>
   ));
   return (
     <section className="benefits-sec">
-      <div className="custom-benefit">
+      <div className="custom-container">
         <h2 className="H2 pb-lg-4 pb-0" style={{ fontSize: "32px" }}>
           Benefits
         </h2>

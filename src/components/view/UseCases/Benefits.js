@@ -9,7 +9,6 @@ import Slider from "react-slick";
 
 const Benefits = () => {
   const settings = {
-    // dots: true,
     infinite: true,
     slidesToShow: 4,
     slidesToScroll: 1,
@@ -39,7 +38,7 @@ const Benefits = () => {
   ));
   return (
     <section className="benefits-sec">
-      <div className="custom-benefit">
+      <div className="custom-container">
         <h2 className="H2 pb-lg-4 pb-0" style={{ fontSize: "32px" }}>
           Benefits
         </h2>

@@ -76,7 +76,7 @@ const MeetTeam = () => {
   return (
     <section className="team-sec">
       <div className="custom-team">
-        <h2 className="H2 pb-lg-5 pb-2" style={{fontSize:"32px"}}>Meet the Team</h2>
+        <h2 className="H2 px-4 pb-lg-5 pb-2" style={{fontSize:"32px"}}>Meet the Team</h2>
         <div className="px-2">
           <Slider {...settings}>
             {teamCard.map(({ id, title, name, img }) => (

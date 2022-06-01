@@ -7,13 +7,13 @@ const caseCard = [
 		id: 1,
 		title: 'Mining',
 		url: '/use-cases/mining',
-		img: "/images/covers/Mining 1.png",
+		img: "/images/covers/Minn.png",
 	},
 	{
 		id: 2,
 		title: 'Logistics and Warehousing',
 		url: '/use-cases/logisticsandwarehousing',
-		img: "/images/covers/logistics.png",
+		img: "/images/covers/LAW.png",
 	},
 	{
 		id: 3,
@@ -49,7 +49,7 @@ const UseCases = () => {
 
 					<div to="" className="col-md-6">
 						<Link to='/use-cases/mining'>
-							<div className="use-card-use-cases" style={{ cursor: 'pointer', backgroundImage: "url('/images/covers/minss.png')", backgroundPosition:"center", backgroundSize:"contain", backgroundRepeat:"no-repeat" }}>
+							<div className="use-card-use-cases" style={{ cursor: 'pointer', backgroundImage: "url('/images/covers/minn.png')", backgroundPosition:"center", backgroundSize:"cover", backgroundRepeat:"no-repeat" }}>
 								<div className="use-card-desc">
 									<h2 className="H2 text-white all-cases" style={{ fontSize: "32px", paddingLeft: "30px", paddingTop: "20px" }}> Mining</h2>
 									<span className="H6 pt-3 learn-more-btn" style={{ color: '#69d0ff', fontSize: "15px", paddingLeft: "30px", paddingTop: "20px" }}>
@@ -61,7 +61,7 @@ const UseCases = () => {
 					</div>
 					<div to="" className="col-md-6">
 						<Link to='/use-cases/logisticsandwarehousing'>
-							<div className="use-card-use-cases" style={{ cursor: 'pointer', backgroundImage: "url('/images/covers/log.png')",backgroundSize:"contain"}}>
+							<div className="use-card-use-cases" style={{ cursor: 'pointer', backgroundImage: "url('/images/covers/log.png')",backgroundSize:"cover"}}>
 								<div className="use-card-desc">
 									<h2 className="H2 text-white" style={{ fontSize: "32px", paddingLeft: "30px", paddingTop: "20px" }}>Logistics and Warehousing</h2>
 									<span className="H6 pt-3 learn-more-btn" style={{ color: '#69d0ff', fontSize: "15px", paddingLeft: "30px", paddingTop: "20px" }}>

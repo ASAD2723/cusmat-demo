@@ -103,7 +103,7 @@ const Departments = () => {
         <h3 className="H2 pb-3 fw-bold" style={{fontSize:"32px"}}>Explore Careers at CUSMAT</h3>
     <br />
         
-        <Link to="">
+        <Link to="www.google.com">
           <button className="custom-btn H6">View Vacancies ⟶</button>
         </Link>
       </div>

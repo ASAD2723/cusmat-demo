@@ -1,12 +1,9 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import { Link } from 'react-router-dom'
 import Footer from "../../layout/Footer";
 import Navbar from '../../layout/Navbar'
 
 const OpenCastMining = () => {
-	useEffect(() => {
-		window.scrollTo(0, 0)
-	}, [])
 
 	return (
 		<>
@@ -19,8 +16,8 @@ const OpenCastMining = () => {
 				</div>
 
 				<div className="custom-container business-sec">
-					<h2 className="H2" style={{fontSize: "32px"}}> Business Challenge</h2>
-					<h4 className="H4 py-4 color-2" style={{fontSize: "20px"}}>
+					<h2 className="H2" style={{ fontSize: "32px" }}> Business Challenge</h2>
+					<h4 className="H4 py-4 color-2" style={{ fontSize: "20px" }}>
 						India is the 4th largest construction equipment market in the world and is
 						growing at a CAGR of approximately 11%. Although the growth rate has
 						increased significantly, the industry is facing major challenges because of
@@ -29,11 +26,11 @@ const OpenCastMining = () => {
 						equipment failure rates and increased life cycle costs. In the current case,
 						the bottleneck for customer was Down-time of the equipment due to :
 					</h4>
-					<h4 className="H4 color-2" style={{fontSize: "20px"}}>
+					<h4 className="H4 color-2" style={{ fontSize: "20px" }}>
 						(a) Inability to repair and maintain equipment, <br /> (b) Frequent
 						breakdown of equipment.
 					</h4>
-					<h4 className="H4 py-4 color-2" style={{fontSize: "20px"}}>
+					<h4 className="H4 py-4 color-2" style={{ fontSize: "20px" }}>
 						As a consequence of the complexity of the equipment operations and frequent
 						changes in manpower due to high attrition rate, the service technicians were
 						not able to reach the required level of expertise to keep the equipment
@@ -44,19 +41,19 @@ const OpenCastMining = () => {
 
 				<div className="solution-sec">
 					<div className="custom-container py-5">
-						<h2 className="H2" style={{fontSize: "32px"}}> Solution 1</h2>
-						<h4 className="H4 py-4" style={{fontSize: "20px"}}>
+						<h2 className="H2" style={{ fontSize: "32px" }}> Solution 1</h2>
+						<h4 className="H4 py-4" style={{ fontSize: "20px" }}>
 							CUSMAT worked with concerned people from their team to find out the
 							problem areas. With a detailed study of the equipment and the processes
 							involved, we customised and created a system around the problem. We
 							narrowed down the target improvement area as :
 						</h4>
-						<h4 className="H4 py-4" style={{fontSize: "20px"}}>
+						<h4 className="H4 py-4" style={{ fontSize: "20px" }}>
 							(a) Increasing the uptime of the equipment <br /> (b) Attrition proofing
 							company operations <br /> (c) Reducing life cycle costs <br /> (d)
 							Creating standardized learning paths for service technicians.
 						</h4>
-						<h4 className="H4 py-4" style={{fontSize: "20px"}}>
+						<h4 className="H4 py-4" style={{ fontSize: "20px" }}>
 							The system generated a detailed description of the past and upcoming
 							maintenance schedules, as well as Performance Analytics reports along
 							with overall performance details and suggested redo levels for all
@@ -89,8 +86,8 @@ const OpenCastMining = () => {
 					</div>
 
 					<div className="custom-container py-lg-5">
-						<h2 className="H2" style={{fontSize: "32px"}}> Solution 2</h2>
-						<h4 className="H4 py-4" style={{fontSize: "20px"}}>
+						<h2 className="H2" style={{ fontSize: "32px" }}> Solution 2</h2>
+						<h4 className="H4 py-4" style={{ fontSize: "20px" }}>
 							As the previously implemented solutions showed a significant impact, the
 							customer trusted us to solve another problem regarding their daily
 							production target. After thorough research, CUSMAT designed a solution
@@ -118,10 +115,10 @@ const OpenCastMining = () => {
 							<div className="col-lg-3 col-md-5 text-center  px-3 rounded"></div>
 						</div>
 
-						<h4 className="H4 py-4" style={{fontSize: "20px"}}>
+						<h4 className="H4 py-4" style={{ fontSize: "20px" }}>
 							The equipments designed to up-skill the operators were :
 						</h4>
-						<h4 className="H4 py-3" style={{fontSize: "20px"}}>
+						<h4 className="H4 py-3" style={{ fontSize: "20px" }}>
 							-Dump Trucks : BelAZ, BEML Limited, Caterpillar Inc. <br /> -Excavators
 							: Tata Hitachi, P&H.
 						</h4>
@@ -131,7 +128,7 @@ const OpenCastMining = () => {
 				<div className="next-study-sec py-5 custom-container row justify-content-end">
 					<div className="col-md-6 p-0">
 						<div className="d-md-flex justify-content-end">
-							<h4 className="H4 my-auto pe-3 pb-3 pb-md-0" style={{fontSize: "20px"}}>Next Case Study</h4>
+							<h4 className="H4 my-auto pe-3 pb-3 pb-md-0" style={{ fontSize: "20px" }}>Next Case Study</h4>
 							<Link to="/case-studies/express-logistics">
 								<button className="next-btn">Express Logistics ⟶</button>
 							</Link>

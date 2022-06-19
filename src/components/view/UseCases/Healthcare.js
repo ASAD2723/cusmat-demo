@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import { Link } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faAngleRight } from '@fortawesome/free-solid-svg-icons'
@@ -6,9 +6,6 @@ import Footer from "../../layout/Footer";
 import Navbar from '../../layout/Navbar'
 
 const Healthcare = () => {
-	useEffect(() => {
-		window.scrollTo(0, 0)
-	}, [])
 
 	return (
 		<>
@@ -26,7 +23,7 @@ const Healthcare = () => {
 
 
 				<div>
-					
+
 					<div className="row g-5 mx-0">
 						<Link
 							to="/use-cases/healthcare/medical-equipment-guide"
@@ -38,7 +35,7 @@ const Healthcare = () => {
 						</Link>
 					</div>
 				</div>
-				
+
 			</section>
 			<Footer />
 		</>

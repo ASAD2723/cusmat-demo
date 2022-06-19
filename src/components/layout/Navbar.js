@@ -33,22 +33,22 @@ const Navbar = () => {
 	const [stickyClass, setStickyClass] = useState('')
 
 	useEffect(() => {
-		window.addEventListener('scroll', stickNavbar)
-		return () => window.removeEventListener('scroll', stickNavbar)
+		window.addEventListener('noscroll', stickNavbar)
+		return () => window.removeEventListener('noscroll', stickNavbar)
 	}, [])
 
 	const stickNavbar = () => {
 		if (window !== undefined) {
 			let windowHeight = window.scrollY
 			// window height changed for the demo
-			windowHeight > 80 ? setStickyClass('sticky-nav') : setStickyClass('')
+			windowHeight > 0 ? setStickyClass('sticky-nav') : setStickyClass('')
 		}
 	}
 
 	const location = useLocation()
 	const currentPath = location.pathname
 	return (
-		<nav className={`navbar navbar-expand-lg navbar-light already-sticky  ${stickyClass}`}>
+		<nav className={`navbar navbar-expand-lg bg-light navbar-light already-sticky  ${stickyClass}`}>
 			<div className="container-fluid" style={{ margin: '-32px 0' }}>
 				<Link className="navbar-brand" to="/">
 					<img
@@ -72,9 +72,8 @@ const Navbar = () => {
 					<ul className="navbar-nav ms-auto">
 						<li className="nav-item my-auto px-2">
 							<Link
-								className={`nav-link  nav-style ${
-									currentPath === '/' ? 'active' : ''
-								}`}
+								className={`nav-link  nav-style ${currentPath === '/' ? 'active' : ''
+									}`}
 								aria-current="page"
 								to="/"
 							>
@@ -83,9 +82,8 @@ const Navbar = () => {
 						</li>
 						<li className="nav-item my-auto px-2">
 							<Link
-								className={`nav-link  nav-style ${
-									currentPath.indexOf('/about-us') >= 0 ? 'active' : ''
-								}`}
+								className={`nav-link  nav-style ${currentPath.indexOf('/about-us') >= 0 ? 'active' : ''
+									}`}
 								to="/about-us"
 							>
 								About Us
@@ -94,9 +92,8 @@ const Navbar = () => {
 
 						<li className="nav-item my-auto d-flex position-relative px-2 ">
 							<Link
-								className={`nav-link  nav-style  ${
-									currentPath.indexOf('/use-cases') >= 0 ? 'active' : ''
-								}`}
+								className={`nav-link  nav-style  ${currentPath.indexOf('/use-cases') >= 0 ? 'active' : ''
+									}`}
 								to="/use-cases"
 							>
 								Use Cases
@@ -123,9 +120,8 @@ const Navbar = () => {
 						</li>
 						<li className="nav-item my-auto px-2">
 							<Link
-								className={`nav-link  nav-style ${
-									currentPath.indexOf('/case-studies') >= 0 ? 'active' : ''
-								}`}
+								className={`nav-link  nav-style ${currentPath.indexOf('/case-studies') >= 0 ? 'active' : ''
+									}`}
 								to="/case-studies"
 							>
 								Case Studies
@@ -133,9 +129,8 @@ const Navbar = () => {
 						</li>
 						<li className="nav-item my-auto px-2">
 							<Link
-								className={`nav-link  nav-style ${
-									currentPath.indexOf('/career') >= 0 ? 'active' : ''
-								}`}
+								className={`nav-link  nav-style ${currentPath.indexOf('/career') >= 0 ? 'active' : ''
+									}`}
 								to="/career"
 							>
 								Career
@@ -143,7 +138,7 @@ const Navbar = () => {
 						</li>
 
 						{stickyClass ? (
-							<li className="nav-item px-6" style={{paddingLeft:"40px"}}>
+							<li className="nav-item px-6" style={{ paddingLeft: "40px" }}>
 								<Link to="/request-demo" className="nav-link nav-style">
 									<button className="custom-btn H6">Get In Touch ⟶</button>
 								</Link>

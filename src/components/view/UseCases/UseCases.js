@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import { Link } from 'react-router-dom'
 import Navbar from '../../layout/Navbar'
 import Footer from '../../layout/Footer'
@@ -36,9 +36,6 @@ const caseCard = [
 ]
 
 const UseCases = () => {
-	useEffect(() => {
-		window.scrollTo(0, 0)
-	}, [])
 
 	return (
 		<>

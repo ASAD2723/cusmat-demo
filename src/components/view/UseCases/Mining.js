@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import { Link } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Footer from "../../layout/Footer";
@@ -6,10 +6,6 @@ import { faAngleRight } from '@fortawesome/free-solid-svg-icons'
 import Navbar from '../../layout/Navbar'
 
 const Mining = () => {
-	useEffect(() => {
-		window.scrollTo(0, 0)
-	}, [])
-
 	return (
 		<>
 			<Navbar />
@@ -19,10 +15,10 @@ const Mining = () => {
 					Use Cases <FontAwesomeIcon icon={faAngleRight} className="px-2" />
 					<span className="color-4"> Mining</span>{' '}
 				</h6>
-				<h1 className="H1" style={{fontSize:"50px"}}>Mining</h1>
+				<h1 className="H1" style={{ fontSize: "50px" }}>Mining</h1>
 
 				<div>
-					<h2 className="H2 py-4" style={{fontSize:"32px"}}> Machine Operations</h2>
+					<h2 className="H2 py-4" style={{ fontSize: "32px" }}> Machine Operations</h2>
 					<br />
 					<br />
 					<br />
@@ -32,7 +28,7 @@ const Mining = () => {
 							className="col-lg-4 col-md-6 use-card"
 						>
 							<div className="use-card-desc">
-								<h3 className="H3" style={{fontSize:"24px"}}> Dumper</h3>
+								<h3 className="H3" style={{ fontSize: "24px" }}> Dumper</h3>
 							</div>
 						</Link>
 						<Link
@@ -40,7 +36,7 @@ const Mining = () => {
 							className="col-lg-4 col-md-6 use-card"
 						>
 							<div className="use-card-desc">
-								<h3 className="H3" style={{fontSize:"24px"}}>Winder</h3>
+								<h3 className="H3" style={{ fontSize: "24px" }}>Winder</h3>
 							</div>
 						</Link>
 						<Link
@@ -48,13 +44,13 @@ const Mining = () => {
 							className="col-lg-4 col-md-6 use-card"
 						>
 							<div className="use-card-desc">
-								<h3 className="H3" style={{fontSize:"24px"}}>Excavator</h3>
+								<h3 className="H3" style={{ fontSize: "24px" }}>Excavator</h3>
 							</div>
 						</Link>
 					</div>
 				</div>
 				<div className="py-5">
-					<h2 className="H2 py-4" style={{fontSize:"32px"}}>Mining Equipment Maintenance</h2>
+					<h2 className="H2 py-4" style={{ fontSize: "32px" }}>Mining Equipment Maintenance</h2>
 					<br />
 					<br />
 					<br />
@@ -65,8 +61,8 @@ const Mining = () => {
 							className="col-lg-4 col-md-6 use-card"
 						>
 							<div className="use-card-desc">
-								<h3 className="H3" style={{fontSize:"24px"}}>
-								Mining Equipment Maintenance
+								<h3 className="H3" style={{ fontSize: "24px" }}>
+									Mining Equipment Maintenance
 								</h3>
 							</div>
 						</Link>
